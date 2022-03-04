@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <div style="text-align:right"><%= @name %></div>
+  </head>
+  <body>
+    <h1 class="display-4"><%= @title %></h1>
+    <%= form_tag(controller: "oprate_sns", action: "main") do %>
+      <%= text_field_tag("message") %>
+      <h2>Twitter</h2>
+      </br>
+      <input type="submit" name="twitter_Login" value="twitte_Login" />
+      <input type="submit" name="twitter_Search" value="twitter_Search" />
+      <input type="submit" name="twitter_Tweet" value="twitter_Tweet" />
+      </br>
+      <h2>YouTube</h2>
+      </br>
+      <input type="submit" name="youtube_Login" value="youtube_Login" />
+      <input type="submit" name="youtube_Search" value="youtube_Search" />
+      </br>
+      <h2>Amazon</h2>
+      </br>
+      <input type="submit" name="amazon_Login" value="amazon_Login" />
+      <input type="submit" name="amazon_Search" value="amazon_Search" />
+      </br>
+      <h2>pixiv</h2>
+      </br>
+      <input type="submit" name="pixiv_Login" value="pixiv_Login" />
+      <input type="submit" name="pixiv_Search" value="pixiv_Search" />
+      </br>
+    <% end %>
+  </body>
+</html>
