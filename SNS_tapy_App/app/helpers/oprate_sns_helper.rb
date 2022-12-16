@@ -1,0 +1,2 @@
+module OprateSnsHelper
+end
